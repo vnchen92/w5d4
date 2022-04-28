@@ -23,7 +23,7 @@ class Course < ApplicationRecord
     source: :user
 
     #many prereqs per course
-    has_many :prerequisite,
+    belongs_to :prerequisite,
     primary_key: :id,
     foreign_key: :prereq_id,
     class_name: :Course

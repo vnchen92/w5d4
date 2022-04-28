@@ -22,6 +22,5 @@ class Course < ApplicationRecord
     through: :enrollments,
     source: :user
 
-    belongs_to :
 
 end
